@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "proxy:":"https://mailandesha.onrender.com",
+  "proxy:": "https://mailandesha.onrender.com",
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
@@ -29,8 +29,8 @@
     "jwt-decode": "^4.0.0",
     "mailchimpify": "^0.2.0",
     "papaparse": "^5.4.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-draggable": "^4.4.6",
     "react-email": "^2.1.6",
     "react-google-login": "^5.2.2",
