@@ -36,7 +36,7 @@ const LoginForm: React.FC<Props> = ({ handleFromLogin }) => {
     event.preventDefault();
 
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch('https://mailandesha.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const LoginForm: React.FC<Props> = ({ handleFromLogin }) => {
   // Handle login with Google
   const loginWithGoogle = async () => {
     try {
-      const response = await axios.get('/api/auth/google');
+      const response = await axios.get('https://mailandesha.onrender.com/api/auth/google');
       const { token, user } = response.data;
 
       // Dispatch login action to update Redux state

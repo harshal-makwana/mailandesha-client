@@ -76,7 +76,7 @@ const RegisterForm: React.FC = () => {
       // Perform form submission logic here
 
       try {
-        const response = await fetch('/api/auth/register', {
+        const response = await fetch('https://mailandesha.onrender.com/api/auth/register', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ company : formValues.company, name : formValues.name, email: formValues.email, password : formValues.password})

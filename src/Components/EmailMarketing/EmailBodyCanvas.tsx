@@ -182,7 +182,7 @@ const App: React.FC = () => {
     if (emailRef.current) {
       const emailHtml = emailRef.current.innerHTML;
       try {
-        await axios.post('/api/email', { data: { emailHtml, campaignName, senderEmail, senderName, subject, preheader,image,recipients} });
+        await axios.post('https://mailandesha.onrender.com/api/email', { data: { emailHtml, campaignName, senderEmail, senderName, subject, preheader,image,recipients} });
         console.log('Email sent successfully');
       } catch (error) {
         console.error('Error sending email:', error);
