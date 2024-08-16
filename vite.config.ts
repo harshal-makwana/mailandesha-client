@@ -11,7 +11,7 @@ export default defineConfig({
    server: {
     proxy: {
       '/api': {
-        target: 'https://mailandesha.onrender.com', // Backend server URL
+        target: 'https://mailandesha.onrender.com/', // Backend server URL
         changeOrigin: true,       
       },
     },
