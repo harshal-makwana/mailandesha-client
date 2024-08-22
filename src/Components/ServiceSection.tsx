@@ -53,7 +53,7 @@ const ServicesSection: React.FC = () => {
     <Container maxWidth="lg" sx={{ mt:{xs:"90px",lg:"120px"}, display:"flex",flexDirection:"column", justifyContent:"center", alignItems:"center" }}  >
      <Grid container sx={{display:"flex",flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
      <Typography  sx={{fontSize: { xs: '2.24rem', md: '2.35rem', lg: '3.05rem'}}} align="center" fontWeight={600} gutterBottom>
-        Services We <span style={{color:"#B61F0C" , fontWeight:700,textDecoration:"underline",textDecorationColor:"#B61F0C"}}>Offer</span>
+        Services We <span style={{ fontWeight:700,textDecoration:"underline",textDecorationColor:"#B61F0C"}}>Offer</span>
       </Typography>
      </Grid>
       <Grid container spacing="45px" justifyContent="center" sx={{mt:{xs:"0px",lg:"15px"}}}>

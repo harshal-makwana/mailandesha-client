@@ -5,14 +5,16 @@ import { styled } from '@mui/material/styles';
 
 
 const StyledButton = styled(Button)(({ theme }) => ({
-
-    height : 60,
-    width:200,
-    '&:hover': {
-      backgroundColor: theme.palette.error.main,
-      color: 'white',
-    },
-  }));
+  backgroundColor:"#B61F0C",
+  color:"white",
+  height : 60,
+  width:200,
+ '&:hover': {
+   backgroundColor: "white",
+   color: theme.palette.error.main,
+    border: '1px solid red'
+ },
+}));
 
 
 const EmailMarketing = () => {
@@ -26,7 +28,7 @@ const EmailMarketing = () => {
     </Typography>
     </Grid>
     <Grid item xs={12}>
-    <Typography variant='h2' fontWeight={800} gutterBottom sx={{py:1}}>
+    <Typography variant='h2'  fontWeight={800} gutterBottom sx={{py:1,}}>
     Grow your business with email
   </Typography>
     </Grid>
@@ -40,7 +42,7 @@ const EmailMarketing = () => {
    </Grid>
   <Grid container spacing={3} sx={{py:2}}>
   <Grid item > 
-  <StyledButton variant="outlined" color="error" href="/login" sx={{  border: '1px solid red', color: 'red' }}>
+  <StyledButton  color="error" href="/login">
          SignUp for Free
   </StyledButton>
   </Grid>

@@ -6,15 +6,16 @@ import { styled } from '@mui/material/styles';
 
 
 const StyledButton = styled(Button)(({ theme }) => ({
-
-    height : 60,
-    width:200,
-    '&:hover': {
-      backgroundColor: theme.palette.error.main,
-      color: 'white',
-    },
-  }));
-
+  backgroundColor:"#B61F0C",
+  color:"white",
+  height : 60,
+  width:200,
+ '&:hover': {
+   backgroundColor: "white",
+   color: theme.palette.error.main,
+    border: '1px solid red'
+ },
+}));
 
 
 
@@ -33,7 +34,7 @@ export default function EmailCampaigns() {
             get more personal with a rich-text email or build custom campaigns using the HTML editor.</Typography>
      </Grid>
      <Grid item py={2} xs={12} lg={12} alignItems="start">
-      <StyledButton variant="outlined" color="error" href="/email-marketing-form" sx={{  border: '1px solid red', color: 'red' }}>
+      <StyledButton variant="outlined" color="error" href="/email-marketing-form">
         click here to start
       </StyledButton>
      </Grid>

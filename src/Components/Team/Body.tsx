@@ -39,9 +39,10 @@ const Team: React.FC = () => {
         Meet Our Team
       </Typography>
       <Typography variant="h5" paragraph align="center">
-        Our team is dedicated to bringing you the best email marketing solutions. Get to know the people behind the innovation.
+        Our team is dedicated to bringing you the best email marketing solutions.
+        
       </Typography>
-      
+      <Typography variant="h5" paragraph align="center"> Get to know the people behind the innovation.</Typography>
       <Grid container spacing={4} mt="60px" justifyContent={"center"}>
         {teamMembers.map((member, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>

@@ -13,8 +13,8 @@ export const menuItemsData = [
           url: 'web-developement',
         },
         {
-          title: 'SEO',
-          url: 'seo',
+          title: 'AI Content Genrator',
+          url: '/generate-email-content',
         },
       ],
     }, 

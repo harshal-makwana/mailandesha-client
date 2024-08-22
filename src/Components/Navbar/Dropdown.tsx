@@ -22,13 +22,12 @@ if(dropdown === true){
       <Box sx={{backgroundColor:"#ffff" , maxWidth:"960px" , position:{xs:"relative" ,lg:"absolute" }, zIndex:"1", paddingInline:"normal", border:"1px solid grey" }}>
       {submenus.map((submenu, index) => (
         <Box key={index} className="menu-items" > 
-             <Typography pt="15px" px={2 } fontWeight={400} textAlign="left" >
+             <Typography py="10px" px={2 } fontWeight={400} textAlign="left" >
              <a style={{textDecoration:"none " , color:"black" }} href={submenu.url}>
             {submenu.title}
             </a>
-         
               </Typography> 
-            
+             
               
         </Box>
       ))}

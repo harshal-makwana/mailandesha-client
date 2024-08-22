@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import Dropdown from './Dropdown';
 import { styled } from '@mui/material/styles';
-import { Box, Button} from '@mui/material';
+import { Box, Typography} from '@mui/material';
 import {  ArrowDropDownRounded } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
 
 
 
-const ButtonStyle = styled(Button)(({ theme }) => ({
+const ButtonStyle = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.primary,
-  padding: '20px 20px',
+  padding: '15px 23px',
   border: 'none',
   '&:hover': {
     backgroundColor: theme.palette.background.default,
@@ -35,12 +35,13 @@ const MenuItems: React.FC<MenuItemProps> = ({ items }) => {
   return (
     <Box className="menu-items" style={{textDecoration:"none",  }}>
     <Link  style={{textDecoration:"none"}} to={items.url} >  <ButtonStyle 
+            gutterBottom
             onMouseEnter={() => {setDropdown(true) }
             }
 
             onMouseLeave={() => {setDropdown(false)}}
           >
-            {items.title}{items.submenu? <ArrowDropDownRounded />:""}
+            {items.title}{items.submenu && <ArrowDropDownRounded sx={{ position: "absolute" }} />}
           </ButtonStyle></Link>
       {
       

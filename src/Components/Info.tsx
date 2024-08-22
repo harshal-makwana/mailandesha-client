@@ -17,7 +17,7 @@ const Info :  React.FC<InfoProps> = ( {image1,text1,image2,text2}  ) => {
         <Grid container justifyContent="center" >
       <Grid item >
       <Typography variant="h1" align="center" sx={{ fontSize: { xs: '2.2rem', md: '2rem', lg: '2.5rem' }, fontWeight:"800" }}>
-        Your <span style={{color:"#B61F0C" , textDecoration:"underline",textDecorationColor:"#B61F0C"}}>Marketing</span> Will Perform Better With Us
+        Your <span style={{ textDecoration:"underline",textDecorationColor:"#B61F0C"}}>Marketing</span> Will Perform Better With Us
         </Typography>
       </Grid>
         </Grid> 

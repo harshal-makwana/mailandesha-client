@@ -26,12 +26,15 @@ const NavbarGlass = styled(AppBar)(({ theme }) => ({
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-  marginTop:"12px",
-  '&:hover': {
-    backgroundColor: theme.palette.error.main,
-    color: 'white',
-  },
+  backgroundColor:"#B61F0C",
+  color:"white",
+ '&:hover': {
+   backgroundColor: "white",
+   color: theme.palette.error.main,
+    border: '1px solid red'
+ },
 }));
+
 
 const NavbarText = styled(Typography)(({ theme }) => ({
   color: '#000',
@@ -108,7 +111,7 @@ export default function Navbar() {
           return <MenuItems items={menu} key={index} />;
         })}
       </Box>
-         {name?<Link to="profile"><Avatar sx={{ height:"50px" , width:"50px" }} src='https://i.pinimg.com/originals/2b/47/b7/2b47b7e0ef526cfb2a6d29fec058d87a.png'/></Link>: <StyledButton variant="outlined" color="error" href="/login" sx={{ mr: 2, mb: 2, border: '1px solid red', color: 'red' }}>
+         {name?<Link to="profile"><Avatar sx={{ height:"50px" , width:"50px" }} src='https://i.pinimg.com/originals/2b/47/b7/2b47b7e0ef526cfb2a6d29fec058d87a.png'/></Link>: <StyledButton variant="contained"  href="/login" sx={{ mr: 2, mb: 2, }}>
           LOgin / signup 
           </StyledButton>}
         </Box>
@@ -128,11 +131,11 @@ export default function Navbar() {
           return <Box ><MenuItems items={menu} key={index} /></Box>
         })}
       </Box>
-      {name?<Link to="/profile"><StyledButton variant="outlined" color="error" sx={{ mr: 2, mb: 2, border: '1px solid red', color: 'red' }}>
+      {name?<Link to="/profile"><StyledButton variant="contained" sx={{ mr: 2, mb: 2, border: '1px solid red'}}>
           Profile 
           </StyledButton></Link>: 
           <Link to="/login">
-           <StyledButton variant="outlined" color="error" href="/login" sx={{ mr: 2, mb: 2, border: '1px solid red', color: 'red' }}>
+          <StyledButton  variant="contained"  href="/login" sx={{color:"white", mr: 2, mb: 2, border: '1px solid red'}}>
           LOgin / signup 
           </StyledButton>
           </Link>

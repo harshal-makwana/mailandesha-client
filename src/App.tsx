@@ -16,6 +16,7 @@ import Pricing from './Components/Pricing/Pricing';
 import WhyUs from './Components/AboutUs/AboutUs';
 import Experience from './Components/Experience/Experience';
 import Team from './Components/Team/Team';
+import ContentGeneration from './Components/ContentGenerationAI/ContentGeneration';
 // import Demo from './Components/EmailMarketing/Demo'
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path='/about-us' element={<WhyUs/>}/>
         <Route path="/experience" element={<Experience />} />
         <Route path="/team" element={<Team />} />
+        <Route path='/generate-email-content' element={<ContentGeneration/>}/>
         {/* <Route path='demo' element = {<Demo/>}/> */}
         </Routes> 
          </Elements> 

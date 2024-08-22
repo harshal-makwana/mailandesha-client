@@ -95,7 +95,7 @@ const Cards: React.FC = () => {
        </Grid>
        <Grid container justifyContent="center" pt={"30px"}>
        <Typography color="error"   variant='h5' sx={{fontWeight:800 , textDecoration:"none" , color:"red", textAlign:{xs:"center"}}} >
-       < a href='#' style={{color:"rgb(215,0,0)"}}> <p color='#B3404A'> See live examples of our reporting and communication in your marketing plan </p> </a> 
+       < a href='#' style={{color:'#B61F0C',textDecorationColor:"#B61F0C"}}> <p > See live examples of our reporting and communication in your marketing plan </p> </a> 
        </Typography>
        </Grid>
       </Grid>
