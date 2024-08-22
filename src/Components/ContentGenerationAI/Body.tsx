@@ -22,7 +22,10 @@ const Body: React.FC = () => {
   };
 
   return (
-    <Box sx={{ p: 2 }} maxWidth={"sm"} marginInline={"auto"} mt={"30px"}>
+    <Box sx={{ p: 2 }} maxWidth={"sm"} marginInline={"auto"} mt={"45px"}>
+        <Typography variant='h4' fontWeight={700}>
+        Now generate content for your email from here 
+        </Typography>
       <TextField
         fullWidth
         multiline
@@ -31,7 +34,7 @@ const Body: React.FC = () => {
         onChange={(e) => setPrompt(e.target.value)}
         placeholder="Enter the prompt for your email..."
         variant="outlined"
-        sx={{ mb: 2 }}
+        sx={{ mb: 2 ,mt:"30px"}}
       />
       <Button
         variant="contained"
@@ -40,10 +43,10 @@ const Body: React.FC = () => {
       >
         Generate Email
       </Button>
-      <Box sx={{ mt: 4 }}>
-        <Typography variant="h6" fontWeight={700}>Generated Email Content:</Typography>
-        <Box sx={{border:"0.5px solid grey",padding:"15px",borderRadius:"15px",mt:"30px"}} minHeight={"150px"}>
-        <Typography>{emailContent?emailContent:<p style={{color:"grey"}}>Your Content Will appear here</p>}</Typography>
+      <Box sx={{ mt: 5 }}>
+        <Typography variant="h5" fontWeight={700}>Generated Email Content:</Typography>
+        <Box sx={{border:"0.5px solid grey",padding:"15px",borderRadius:"5px",mt:"10px"}} minHeight={"150px"}>
+        <Typography>{emailContent?emailContent:<p style={{color:"grey"}}>Your Email Will appear here</p>}</Typography>
         </Box>
       </Box>
     </Box>
